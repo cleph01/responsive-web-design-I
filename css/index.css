@@ -70,28 +70,14 @@ h1, h2, h3, h4, h5 {
     padding: 30px 130px;
 }
 
-@media screen and (max-width: 800px) {
-    
+@media (max-width: 800px) {
     .container {
-        margin: 0px 300px;
-        padding: 30px 330px;  
+        padding: 0px;
+        margin: 0px;
       }
-    .container nav {
-        display: flex;
-        flex-direction: column;
-      }
-    .container header nav a {
-        margin-bottom: 20px;
-      }
-/*
-    header .header-content-image{
-        display: none;
-      }
-*/
-    header .header-content-image img{
-        display: none;
-      }
+
 }
+
 
 nav{
 
@@ -99,14 +85,41 @@ nav{
 	/*justify-content: center;*/
 }
 
+@media (max-width: 800px) {
+    nav{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 4%;
+        width: 100%;
+    }
+    
+}
+
 nav .nav-item{
 	display: flex;
 	justify-content: space-between;
     align-items: center;
-    width: 76%;
-
-
+    
 }
+
+@media (max-width: 800px) {
+    nav .nav-item{
+        justify-content: space-between;
+        width: 100%;            
+        margin-top: 5%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    .menu-links{
+        width:100%;
+    }
+    
+}
+
 .menu-links{
 	text-decoration: none;
 	color:gray;
@@ -119,11 +132,25 @@ nav .nav-item{
     width:30%;
 }
 
+@media (max-width: 800px) {
+    .logo{
+        justify-content: center;
+    }
+    
+}
+
+
 header{
 	display: flex;
 	justify-content: center;
     align-items: center;
     height: 530px;
+}
+
+@media (max-width:800px){
+    header{
+        height:410px;
+    }
 }
 header .header-content-text{
 	display: flex;
@@ -132,26 +159,60 @@ header .header-content-text{
     align-items: center;
     width: 56%;
 }
+
+@media (max-width: 800px) {
+    header .header-content-text{
+        justify-content:flex-start;
+    }
+}
+
 #slogan{
 	text-align: center;
-    font-size:79px;
+    font-size:72px;
 }
+
+@media (max-width: 800px){
+    #slogan{
+        margin-top: 0px;
+        margin-bottom: 70p;
+    }
+}
+
 header .header-content-text div{
 	border: 1px solid #000000;
     
     text-align: center;
     font-size:18px;
-    padding: 8px 40px;
+    padding: 7px 40px;
 }
+
+
+
 header .header-content-image{
 	display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
+
+@media (max-width: 800px) {
+    .header-content-image img {
+        display: none;
+      }
+
+}
 .top-content-section{
 	display: flex;
+    
     padding-top: 35px;
     border-top:1px solid #000000;
+}
+
+@media (max-width: 800px){
+    .top-content-section{
+        margin-top: 1%; 
+        margin-bottom:2%;
+        padding: 40px 15px;
+    }
 }
 .bottom-content-section{
 	display: flex;
@@ -159,26 +220,44 @@ header .header-content-image{
     padding-bottom: 35px;
     border-bottom: 1px solid #000000;
 }
+
+@media (max-width: 800px){
+    .bottom-content-section{
+        margin: 0px 35px 55px;
+    }
+}
+
 .bottom-content-section .top-content{
 	width:50%;
+    
 }
 .bottom-content-section .bottom-content{
 	width: 32%;
     margin-bottom: 15px;
 }
+
+@media (max-width: 800px){
+    .bottom-content-section .bottom-content{
+        margin-bottom: 35px;
+    }
+}
+
 .middle-img{
 	text-align: center;
 	margin: 45px 0px;
 }
+
+@media (max-width: 800px){
+    .middle-img{
+        margin: 10px 20px 30px;
+    }
+}
+
 .middle-img img{
 	width: 100%;
 	height: auto;
 }
-section{
-	
-    border-top: 1px solid #000000;
-    
-}
+
 .contact{
 	margin:40px 0px;
     height: 140px;
@@ -186,6 +265,13 @@ section{
     flex-direction: column;
     justify-content: space-between;
 }
+
+@media (max-width: 800px){
+    .contact{
+        margin: 4px 30px; 
+    }
+}
+
 .contact div{
 	margin:0px 0px;
     height: 140px;
@@ -193,11 +279,33 @@ section{
     flex-direction: column;
     justify-content: space-between;
 }
+
+@media (max-width: 800px){
+    .contact div{
+        height:110px;
+    }
+}
+
+@media (max-width: 800px){
+    .contact-info{
+        padding-bottom:15px;
+    }
+}
+
 footer p{
 	padding-top:11px;
     text-align: center;
     font-size:14px;
 }
+
+@media (max-width: 800px){
+    footer p{
+        padding-top: 0px;    
+        font-size:16px;
+    }
+}
+
+
 
 
 /*******Services.HTML*******/

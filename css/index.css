@@ -271,8 +271,9 @@ header .header-content-image{
         flex-direction: column;
         justify-content: space-around;
         height: 400px;
-        margin-bottom: 0px;
-        padding: 50px 20px;
+        width:100%;
+        margin: 0 auto;
+        padding: 55px 5px;
     }
 }
 
@@ -289,7 +290,7 @@ header .header-content-image{
 
 @media (max-width: 500px){
     .top-content-section .top-content{
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -302,7 +303,7 @@ header .header-content-image{
 
 @media (max-width: 800px){
     .bottom-content-section{
-        margin: 0px 35px 55px;
+        margin: 30px 35px 55px;
     }
 }
 
@@ -310,7 +311,8 @@ header .header-content-image{
     .bottom-content-section{
         flex-direction: column;
         height: 460px;
-        margin: 0px 20px 60px;
+        margin: 20px 20px 60px;
+        border: 0px;
     }
 }
 
@@ -322,14 +324,14 @@ header .header-content-image{
 
 @media (max-width: 800px){
     .bottom-content-section .bottom-content{
-        margin-bottom: 35px;
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width: 500px){
     .bottom-content-section .bottom-content{
         width: 100%;
-        padding: 15px 0px;
+        padding: 30px 0px;
     }
 }
 
@@ -338,22 +340,29 @@ header .header-content-image{
 	margin: 35px 0px;
 }
 
-.middle-img img{
-	width: 100%;
-	height: auto;
-}
-
 @media (max-width: 800px){
     .middle-img{
         margin: 10px 20px 30px;
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 500px){
     .middle-img{
         margin: 0px 20px 5px;
     }
 }
+
+.middle-img img{
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 500px){
+    .middle-img img{
+        margin: -12px 0px;
+    }
+}
+
 
 
 
@@ -373,7 +382,9 @@ header .header-content-image{
 
 @media (max-width: 500px){
     .contact{
-        margin: 4px 20px; 
+        border-top:1px solid #000000;
+        padding: 15px 0px; 
+        margin: 5px 20px;
     }
 }
 
@@ -390,7 +401,7 @@ header .header-content-image{
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 500px){
     .contact-info{
         padding-bottom:15px;
     }
@@ -404,6 +415,7 @@ footer p{
 
 @media (max-width: 800px){
     footer p{
+        margin-top: 50px;
         padding-top: 0px;    
         font-size:16px;
     }
@@ -411,7 +423,7 @@ footer p{
 
 @media (max-width: 500px){
     footer p{
-        padding-top: 20px;    
+        padding-top: 10px;    
         font-size:16px;
     }
 }
